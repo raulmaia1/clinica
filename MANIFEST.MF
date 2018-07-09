@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Sealed: true
+Main-Class: br.com.clinica.app.Inicio
+Class-Path: lib/jasperreports-6.6.0.jar lib/commons-collections-3.2.1.jar lib/itext-2.1.7.js6.jar lib/commons-logging-api-1.1.jar lib/commons-logging-1.1.1.jar lib/commons-digester-2.1.jar lib/commons-beanutils-1.9.3.jar lib/commons-logging-1.2.jar
+

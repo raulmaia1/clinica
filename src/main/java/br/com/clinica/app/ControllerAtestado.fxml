@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="584.0" prefWidth="479.0" stylesheets="@app.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.clinica.app.ControllerAtestado">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="479.0" styleClass="topo" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="label-principal" text="Atestado">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="509.0" prefWidth="498.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <TextField fx:id="textCPF" prefHeight="52.0" prefWidth="415.0" promptText="CPF">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="textNome" layoutX="20.0" layoutY="77.0" prefHeight="52.0" prefWidth="397.0" promptText="Nome">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="textRG" layoutX="20.0" layoutY="20.0" prefHeight="52.0" prefWidth="397.0" promptText="RG">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="textCertificadora" layoutX="20.0" layoutY="134.0" prefHeight="52.0" prefWidth="397.0" promptText="CERTIFICADORA" text="SSP/MA">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextArea fx:id="textDiagnostico" prefHeight="147.0" prefWidth="492.0" promptText="É portador">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextArea>
+            <TextField fx:id="textCID" layoutX="20.0" layoutY="191.0" prefHeight="52.0" prefWidth="433.0" promptText="CID">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+         </children></VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="479.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#gerar" prefHeight="42.0" prefWidth="127.0" styleClass="button-principal" text="Gerar" textFill="WHITE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>

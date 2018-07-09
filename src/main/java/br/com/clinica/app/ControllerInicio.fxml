@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="425.0" stylesheets="@app.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.clinica.app.ControllerInicio">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="86.0" prefWidth="425.0" styleClass="topo" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="label-principal" text="Gerador de Documentos">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="452.0" prefWidth="417.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" onMouseClicked="#abrirAtestado" prefHeight="84.0" prefWidth="425.0" styleClass="button-principal">
+               <children>
+                  <Label text="Atestado " textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="42.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="20.0" layoutY="20.0" onMouseClicked="#abrirAtestadoMedicoDeSaudeOcupacional" prefHeight="84.0" prefWidth="425.0" styleClass="button-principal">
+               <children>
+                  <Label text="ASO" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="42.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="20.0" layoutY="109.0" onMouseClicked="#abrirDeclaracaoPrimeiro" prefHeight="84.0" prefWidth="425.0" styleClass="button-principal">
+               <children>
+                  <Label prefHeight="84.0" prefWidth="405.0" text="Declaração do Primeiro Atedimento" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></VBox>
+   </center>
+</BorderPane>
